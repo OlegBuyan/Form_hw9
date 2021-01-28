@@ -1,0 +1,142 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	height: 5000px;
+	margin: 0;
+
+}
+section {
+	position: relative;
+	height: 100%;
+	background-image: url(./img/Layer.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.logform {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	height: 40px;
+	border: 2px solid black;
+	padding-right: 30px;
+}
+.layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .5);
+}
+.login-popup {
+	background-color: white;
+	top: 50%;
+	left: 50%;
+	width: 460px;
+	position: fixed	;
+	padding-bottom: 60px;
+	padding-left: 80px;
+	padding-right: 80px;
+	padding-top: 50px;
+	margin-left: -230px;
+	transform: translateY(-50%)
+}
+button {
+	background-color: black;
+	width: 300px;
+	height: 43px;
+}
+.login-butt {
+	text-align: center;
+	color: #ffffff;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.logform {
+	position: relative;
+	padding: 15px;
+	color: #000000;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 24px;
+}
+.img-form {
+	position: relative;
+}
+.img-form::after  {
+	content: '';
+	position: absolute;
+	width: 13px;
+	height: 13px;
+	background-size: cover;
+	background-repeat: no-repeat;	
+	background-image: url(./img/user.png);
+	top: 35%;
+	left: 90%;
+}
+.pass-conteiner::after {
+	content: '';
+	height: 15px;
+	background-image: url(./img/lock.png);
+}
+h2 {
+	margin-top: 0;
+	color: #000000;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 42px;
+	margin-bottom: 25px;
+}
+h3 {
+	margin-top: 0;
+	color: #000000;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 24px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+.forgot-pass {
+	text-align: right;
+	display: block;
+	margin-bottom: 20px;
+	margin-top: 0;
+}
+a {
+	color: #000000;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 24px;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+.close {
+	width: 19px;
+	height: 19px;
+	background-repeat: no-repeat;
+	background-image: url(./img/cross.png);
+	position: absolute;
+	background-size: cover;
+	right: -26px;
+	top: 10px;
+	outline: none;
+	border: none;
+	background-color: transparent;
+}
+.logform::-webkit-input-placeholder {
+	color: #000000;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 24px;	
+	padding-left: 10px;
+}
